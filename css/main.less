@@ -265,7 +265,7 @@ header {
                     }
                 }
 
-                .advanced-search{
+                .advanced-search {
                     display: flex;
                     position: relative;
                     .button(#FF7F00);
@@ -316,5 +316,397 @@ header {
         font-weight: bold;
         font-size: 36px;
         text-transform: uppercase;
+    }
+}
+
+.findCarByBrand-container {
+
+    .select-brand-container {
+        width: 100%;
+        height: 820px;
+        background: url(../img/Vector\ BG.svg);
+        display: flex;
+        flex-direction: column;
+        padding: 120px 120px 162px 120px;
+
+        div:first-child {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 48px;
+
+            h2 {
+                color: @white;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 150%;
+            }
+
+            a {
+                display: flex;
+                position: relative;
+                .button(@white);
+                width: 141px;
+                height: 26px;
+                align-items: center;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 30%;
+                    right: 4px;
+                    width: 16px;
+                    height: 16px;
+                    background: url('../icons/arrow_back_white.svg');
+                }
+            }
+        }
+
+        .brands-container {
+            width: 100%;
+            height: 414px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 24px;
+
+            .brand {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 48px 0 30px 0;
+                background: @white;
+                color: @black;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+                border-radius: 8px;
+                margin-bottom: 0;
+                cursor: pointer;
+
+                img {
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+        }
+    }
+}
+
+.select-carType-container {
+    width: 100%;
+    height: 820px;
+    background: @white;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 120px 162px 120px;
+
+    div:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+
+        h2 {
+            color: @black;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 150%;
+        }
+
+        a {
+            display: flex;
+            position: relative;
+            .button(@black);
+            width: 171px;
+            height: 26px;
+            align-items: center;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 30%;
+                right: 4px;
+                width: 16px;
+                height: 16px;
+                background: url('../icons/arrow_back_black.svg');
+            }
+        }
+    }
+
+    .brands-container {
+        width: 100%;
+        height: 414px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 24px;
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0;
+            background: @white;
+            color: @black;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+            border-radius: 8px;
+            margin-bottom: 0;
+            cursor: pointer;
+
+            img {
+                width: 106px;
+                height: 97px;
+            }
+        }
+    }
+}
+
+.cars-ad-container {
+    width: 100%;
+    height: 769px;
+    background: #F7F7F7;
+    padding: 120px 68.59px;
+
+    .cars-ad-title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 63.41px;
+        align-items: center;
+
+        h2 {
+            color: @black;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 150%;
+        }
+
+        a {
+            display: flex;
+            position: relative;
+            .button(@black);
+            width: 124px;
+            height: 26px;
+            align-items: center;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 30%;
+                right: 4px;
+                width: 16px;
+                height: 16px;
+                background: url('../icons/arrow_back_black.svg');
+            }
+        }
+    }
+
+    .car-ad-slider-container {
+        position: relative;
+        margin-top: 48.67px;
+
+        .wrap {
+            position: relative;
+
+            .slider-item {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 32px;
+                width: 100%;
+                height: 340px;
+                padding: 0 63.41px;
+
+                .ad-car {
+                    // width: 270px;
+                    // height: 340px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: column;
+
+                    &:nth-child(2) .car-ad-img {
+                        background: url("../img/Mask Group.png");
+                        background-size: cover;
+                    }
+
+                    &:nth-child(3) .car-ad-img {
+                        background: url("../img/Mask Group3.png");
+                        background-size: cover;
+                    }
+
+                    &:nth-child(4) .car-ad-img {
+                        background: url("../img/yuvraj-singh-RjjEmr24h-M-unsplash\ 1.svg");
+                        background-size: cover;
+                    }
+
+                    .car-ad-img {
+                        width: 100%;
+                        height: 144px;
+                        display: flex;
+                        padding: 8px;
+                        justify-content: flex-end;
+                        background: url("../img/johnny-jarnagin-lwzAhluLVPI-unsplash.svg");
+                        background-size: cover;
+                        border-radius: 8px 8px 0px 0px;
+                    }
+
+                    .car-ad-info {
+                        width: 100%;
+                        padding: 18.15px 16px 24px 16px;
+                        display: flex;
+                        flex-direction: column;
+
+                        h3 {
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 150%;
+                            color: @black;
+                        }
+
+                        h5 {
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #616161;
+                        }
+
+                        p {
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 150%;
+                            color: #616161;
+                            position: relative;
+                            margin-left: 30px;
+                            margin-bottom: 5px;
+                        }
+
+                        .info-ad-location::before {
+                            content: "";
+                            position: absolute;
+                            top: 2px;
+                            left: -23px;
+                            width: 14px;
+                            height: 20px;
+                            background: url("../icons/location_on_24px.svg");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+
+                        .info-ad-status::before {
+                            content: "";
+                            position: absolute;
+                            top: 2px;
+                            left: -26px;
+                            width: 20px;
+                            height: 20px;
+                            background: url("../icons/info24px.svg");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
+
+                        h4 {
+                            font-weight: bold;
+                            font-size: 20px;
+                            line-height: 150%;
+                            color: #FF7F00;
+                            align-self: flex-end;
+                            margin-top: 35px;
+                        }
+                    }
+                }
+            }
+
+            .prev {
+                position: absolute;
+                top: 123px;
+                left: 0;
+                width: 15px;
+                height: 24px;
+                background: url(../icons/chevron_left_24px.svg);
+                background-size: cover;
+                cursor: pointer;
+            }
+
+            .next {
+                position: absolute;
+                top: 123px;
+                right: 0;
+                width: 15px;
+                height: 24px;
+                background: url(../icons/chevron_right_24px.svg);
+                background-size: cover;
+                cursor: pointer;
+            }
+
+            .slider-dots {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 66.6px;
+
+                .dot {
+                    width: 14px;
+                    height: 14px;
+                    background: url(../icons/radio_button_unchecked_24px.svg);
+                    margin-left: 21px;
+                    padding: 2px;
+                    cursor: pointer;
+                }
+
+                .dot-active {
+                    background: url(../icons/radio_button_checked_24px.svg);
+                }
+            }
+
+            .slider-item:nth-child(2),
+            .slider-item:nth-child(3),
+            .slider-item:nth-child(4),{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                justify-items: center;
+                align-items: center;
+                font-size: 48px;
+                color: @black;
+            }
+        }
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
