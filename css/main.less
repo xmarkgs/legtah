@@ -684,7 +684,7 @@ header {
 
             .slider-item:nth-child(2),
             .slider-item:nth-child(3),
-            .slider-item:nth-child(4),{
+            .slider-item:nth-child(4) {
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
                 justify-items: center;
@@ -708,5 +708,252 @@ header {
 
     100% {
         opacity: 1;
+    }
+}
+
+.sell-your-car-container {
+    width: 100%;
+    height: 962px;
+    background: @white;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.7fr 1.2fr;
+    grid-column-gap: 100px;
+    padding: 120px 148px 200px 232px;
+    color: #1B1B1B;
+
+    form {
+        // width: 335px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 150%;
+        }
+
+        h3 {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            margin-bottom: 36px;
+        }
+
+        label {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 150%;
+            color: @black;
+        }
+
+        select {
+            width: 335px;
+            height: 56px;
+            color: @grey;
+            border: 1px solid #C1C1C1;
+            border-radius: 8px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            padding: 8px 14px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url(../icons/expand_more_24px.svg);
+            background-repeat: no-repeat;
+            background-position: 95% 50%;
+            background-size: 12px;
+            margin-bottom: 29px;
+
+            option {
+                width: 335px;
+                height: 56px;
+                color: @black;
+                padding: 8px 14px;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 150%;
+                border-top: 1px solid #EDEDED;
+                border-bottom: 1px solid #EDEDED;
+            }
+        }
+
+        .select-half-container {
+            width: 335px;
+            display: flex;
+            margin-bottom: 29px;
+
+            .select-half {
+                width: 50%;
+                margin-bottom: 0;
+
+                &:nth-child(2) {
+                    margin-left: 11px;
+                }
+            }
+        }
+
+        .search-car-button {
+            .button(@white);
+            .center();
+            background: linear-gradient(90deg, #FFA400 0%, #FF7F00 100%);
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            width: 335px;
+            height: 56px;
+            margin-top: 18px;
+            cursor: pointer;
+        }
+    }
+
+    .sell-your-car-preview {
+        // width: 626px;
+        height: 286px;
+        background: url(../img/car-967387_1280\ 1.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 200px;
+    }
+}
+
+.fuel-calculator-container {
+    width: 100%;
+    height: 746px;
+    background: url(../img/O72HFP0\ 1.svg);
+    background-size: cover;
+    padding: 96px 131px 0 0;
+    display: flex;
+    justify-content: flex-end;
+
+    .fuel-calc-info {
+        width: 580px;
+        height: 449px;
+        background: @white;
+        display: flex;
+        flex-direction: column;
+        padding: 56px 60px 60px 60px;
+        color: #1B1B1B;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+        border-radius: 8px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 150%;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            width: 460px;
+            color: #8A8A8A;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 32px;
+        }
+
+        .more-details-btn {
+            width: 200px;
+            height: 56px;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+            border-radius: 8px;
+            border: 2.2px solid #FFA400;
+            .center();
+            cursor: pointer;
+            color: #FFA400;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 150%;
+        }
+    }
+}
+
+.bmw-ad-bottom-container {
+    width: 100%;
+    height: 566px;
+    .center();
+}
+
+footer {
+    width: 75%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto auto;
+    background: linear-gradient(180deg, #4D4D4D 0%, #000000 100%);
+    padding: 30px 135px 72px 135px;
+    color: #EDEDED;
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 150%;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 4px;
+    }
+
+    .sponsor-logo-container {
+        padding: 0 40px;
+
+        img {
+            width: 134px;
+            height: 59px;
+        }
+    }
+
+    .social-networks-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 88px;
+        height: 88px;
+
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .get-it-btn {
+        width: 200px;
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .copyright {
+        width: 100%;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 52px;
     }
 }
